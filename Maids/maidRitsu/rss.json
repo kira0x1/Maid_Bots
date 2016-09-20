@@ -1,0 +1,16 @@
+{
+  "feeds": [
+    {
+      "id": 0,
+      "channel": "213745302291611648",
+      "url": "https://anisync.net/episodes/rss",
+      "include": "[1080p]"
+    },
+    {
+      "id": 1,
+      "channel": "213745982326702081",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC9CuvdOVfMPvKCiwdGKL3cQ",
+      "include": "Game Grumps"
+    }
+  ]
+}
