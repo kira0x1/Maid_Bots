@@ -21,7 +21,7 @@ class maid_cog:
                 i+=1
                 await asyncio.sleep(3.0)
             except:
-                print("replyLoop error:", sys.exc_info()[0])
+                print("replyLoop error")
 
     async def progressLoop(self):
         while(True):
@@ -32,7 +32,7 @@ class maid_cog:
                     await self.bot.send_message(self.bot.get_channel(str(226804409659686913)), "t!daily " + self.king)
                 await asyncio.sleep(600)
             except:
-                print("progressLoop error:", sys.exc_info()[0])
+                print("progressLoop error:")
 
 
     async def on_message(self, message):
