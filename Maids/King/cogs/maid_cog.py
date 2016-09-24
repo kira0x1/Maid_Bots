@@ -24,10 +24,5 @@ class maid_cog:
                 self.bot.loop.create_task(self.replyLoop())
                 break
 
-
-    async def on_message(self, message):
-        if message.author == self.bot.user:
-            await self.bot.delete_message(message)
-
 def setup(bot):
     bot.add_cog(maid_cog(bot))
