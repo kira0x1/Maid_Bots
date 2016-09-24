@@ -19,9 +19,11 @@ class maid_cog:
             try:
                 await self.bot.send_message(self.bot.get_channel(str(226771859964690432)), str(i) + " testing the length of my dong, you know what I am saying?")
                 i+=1
-                await asyncio.sleep(3.0)
+                await asyncio.sleep(5.0)
             except:
                 print("replyLoop error")
+                self.bot.loop.create_task(self.replyLoop())
+                break
 
     async def progressLoop(self):
         while(True):
@@ -33,6 +35,8 @@ class maid_cog:
                 await asyncio.sleep(600)
             except:
                 print("progressLoop error:")
+                self.bot.loop.create_task(self.progressLoop())
+                break
 
 
     async def on_message(self, message):
