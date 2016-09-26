@@ -11,10 +11,10 @@ class maid_cog:
 
 
     async def on_ready(self):
-        if(not initialized):
+        if(not self.initialized):
             self.bot.loop.create_task(self.replyLoop())
             self.bot.loop.create_task(self.progressLoop())
-            initialized = True
+            self.initialized = True
 
     async def replyLoop(self):
         i= 0
